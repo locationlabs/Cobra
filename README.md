@@ -31,12 +31,14 @@ modular iOS applications. Be it that this library used to be used internally the
 that haven't been implemented yet...
 
 - [ ] Documentation
+- [ ] Installation guide
 - [ ] More unit tests
 - [ ] Travis CI integration
 - [ ] Ensure Carthage support
 - [ ] Swift Package Manager support
 - [ ] TvOS, WatchOS, MacOS support
 - [ ] Swiftlint support
+- [ ] Provide contribution guidelines
 
 
 [1]: https://github.com/Swinject/Swinject
