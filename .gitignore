@@ -1,0 +1,13 @@
+# Xcode
+.DS_Store
+*.pbxuser
+xcuserdata
+profile
+DerivedData
+*.xccheckout
+*.xcscmblueprint
+instruments*
+
+# cocoapods
+Pods
+

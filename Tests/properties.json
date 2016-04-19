@@ -1,0 +1,5 @@
+{
+    "daemon.assembly.name": "Viper2Specs.DaemonAssembly",
+    "app.prop": "hello world",
+    "env.prop": "properties.json"
+}
