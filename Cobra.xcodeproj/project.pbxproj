@@ -35,7 +35,7 @@
 		903EDEF91CC1810800AF813C /* prod.json in Resources */ = {isa = PBXBuildFile; fileRef = 903EDEF81CC1810800AF813C /* prod.json */; };
 		903EDF241CC1AADA00AF813C /* FlavorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF221CC1AAC600AF813C /* FlavorComponent.swift */; };
 		903EDF821CC58A8B00AF813C /* FooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF811CC58A8B00AF813C /* FooService.swift */; };
-		903EDF891CC5A48F00AF813C /* Cobra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF881CC5A48F00AF813C /* Cobra.swift */; };
+		903EDF891CC5A48F00AF813C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF881CC5A48F00AF813C /* Log.swift */; };
 		903EDF991CC6BB1600AF813C /* Bar2Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF981CC6BB1600AF813C /* Bar2Assembly.swift */; };
 		903EDF9B1CC6BB2600AF813C /* Bar2Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF9A1CC6BB2600AF813C /* Bar2Feature.swift */; };
 		903EDF9E1CC6BCEC00AF813C /* JsonProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF9C1CC6BCC400AF813C /* JsonProperty.swift */; };
@@ -91,7 +91,7 @@
 		903EDEF81CC1810800AF813C /* prod.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = prod.json; sourceTree = "<group>"; };
 		903EDF221CC1AAC600AF813C /* FlavorComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorComponent.swift; sourceTree = "<group>"; };
 		903EDF811CC58A8B00AF813C /* FooService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooService.swift; sourceTree = "<group>"; };
-		903EDF881CC5A48F00AF813C /* Cobra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cobra.swift; sourceTree = "<group>"; };
+		903EDF881CC5A48F00AF813C /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		903EDF981CC6BB1600AF813C /* Bar2Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar2Assembly.swift; sourceTree = "<group>"; };
 		903EDF9A1CC6BB2600AF813C /* Bar2Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar2Feature.swift; sourceTree = "<group>"; };
 		903EDF9C1CC6BCC400AF813C /* JsonProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonProperty.swift; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				903EDE641CC03AB000AF813C /* App.swift */,
-				903EDF881CC5A48F00AF813C /* Cobra.swift */,
 				903EDE791CC03AEF00AF813C /* Constructible.swift */,
 				903EDE651CC03AB000AF813C /* Config.swift */,
 				903EDEF41CC172A400AF813C /* Component.swift */,
@@ -177,6 +176,7 @@
 				903EDEF21CC1724B00AF813C /* Flavor.swift */,
 				903EDF221CC1AAC600AF813C /* FlavorComponent.swift */,
 				903EDF9C1CC6BCC400AF813C /* JsonProperty.swift */,
+				903EDF881CC5A48F00AF813C /* Log.swift */,
 				903EDE671CC03AB000AF813C /* Module.swift */,
 				903EDE681CC03AB000AF813C /* ModuleType.swift */,
 				903EDF9F1CC6BDBF00AF813C /* PlistProperty.swift */,
@@ -474,7 +474,7 @@
 				903EDF9E1CC6BCEC00AF813C /* JsonProperty.swift in Sources */,
 				903EDE701CC03AB000AF813C /* Error.swift in Sources */,
 				903EDE741CC03AB000AF813C /* Proxy.swift in Sources */,
-				903EDF891CC5A48F00AF813C /* Cobra.swift in Sources */,
+				903EDF891CC5A48F00AF813C /* Log.swift in Sources */,
 				903EDE7A1CC03AEF00AF813C /* Constructible.swift in Sources */,
 				903EDE711CC03AB000AF813C /* Module.swift in Sources */,
 				903EDEF71CC172F700AF813C /* ComponentType.swift in Sources */,
