@@ -16,7 +16,7 @@
  ```
  */
 public struct Flavor: Equatable {
-    var value: String
+    public var value: String
     public init(_ value: String) {
         self.value = value
     }
