@@ -16,8 +16,10 @@ iOS applications.
 See [Boa][5], a sample app written in Swift, for details.
 
 ## Requirements
-- iOS8+
-- Xcode 7.3+
+- iOS 8+
+- Swift 2.2
+	- Xcode 7.0+
+
 
 ## Installation
 Cobra is available through [CocoaPods](https://cocoapods.org).
