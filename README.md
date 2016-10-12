@@ -20,7 +20,19 @@ See [Boa][5], a sample app written in Swift, for details.
 - Xcode 7.3+
 
 ## Installation
-WIP
+Cobra is available through [CocoaPods](https://cocoapods.org).
+
+### CocoaPods
+
+To install Cobra with CocoaPods, add the following lines to your `Podfile`.
+
+    source 'https://github.com/CocoaPods/Specs.git'
+    platform :ios, '8.0'
+    use_frameworks!
+
+    pod 'Cobra', '~> 1.0'
+
+Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
 
 ## Documentation
 WIP
@@ -31,7 +43,6 @@ modular iOS applications. Be it that this library used to be used internally the
 that haven't been implemented yet...
 
 - [ ] Documentation
-- [ ] Installation guide
 - [ ] More unit tests
 - [ ] Travis CI integration
 - [ ] Ensure Carthage support
