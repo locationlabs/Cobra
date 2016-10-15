@@ -1,4 +1,7 @@
 # Cobra
+
+[![Build Status](https://travis-ci.org/locationlabs/Cobra.svg?branch=master)](https://travis-ci.org/locationlabs/Cobra)
+
 Cobra is a lightweight application routing framework written in Swift that provides modular abstractions
 to your code base that is built on top of [Swinject][1], a lightweight dependency injection
 framework.
