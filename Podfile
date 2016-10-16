@@ -10,7 +10,7 @@ pod 'Swinject', '~> 1.1'
 
 # test specific dependencies
 target 'CobraTests' do
-   pod 'Quick', '~> 0.9'
+   pod 'Quick', '~> 0.9.2'
    pod 'Nimble', '~> 4.0'
 end
 
