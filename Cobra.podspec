@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name                      = 'Cobra'
   s.module_name               = 'Cobra'
-  s.version                   = '1.0.0'
+  s.version                   = '1.1.0'
   s.summary                   = 'Application routing framework written in Swift'
   s.homepage                  = 'http://www.locationlabs.com'
   s.license                   = 'APL2'

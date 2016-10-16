@@ -25,7 +25,7 @@ See [Boa][5], a sample app written in Swift, for details.
 
 
 ## Installation
-Cobra is available through [CocoaPods](https://cocoapods.org).
+Cobra is available through [CocoaPods](https://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
 
 ### CocoaPods
 
@@ -38,6 +38,16 @@ To install Cobra with CocoaPods, add the following lines to your `Podfile`.
     pod 'Cobra', '~> 1.0'
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
+
+### Carthage
+
+To install Cobra with Carthage, add the following line to your `Cartfile`.
+
+```
+github "locationlabs/Cobra" ~> 1.1
+```
+
+Then run `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
 
 ## Documentation
 WIP
