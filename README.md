@@ -59,8 +59,6 @@ that haven't been implemented yet...
 
 - [ ] Documentation
 - [ ] More unit tests
-- [ ] Travis CI integration
-- [ ] Ensure Carthage support
 - [ ] Swift Package Manager support
 - [ ] TvOS, WatchOS, MacOS support
 - [ ] Swiftlint support
