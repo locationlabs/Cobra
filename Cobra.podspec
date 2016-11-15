@@ -3,7 +3,10 @@ Pod::Spec.new do |s|
   s.module_name               = 'Cobra'
   s.version                   = '1.2.0'
   s.summary                   = 'Application routing framework written in Swift'
-  s.homepage                  = 'http://www.locationlabs.com'
+  s.description               = <<-DESC
+Cobra is a lightweight application routing framework written in Swift that provides modular abstractions to your code base that is built on top of Swinject, a lightweight dependency injection framework.
+                                DESC
+  s.homepage                  = 'https://github.com/locationlabs/Cobra'
   s.license                   = 'APL2'
   s.author                    = { 'Location Labs' => 'iosswiftdevelop@locationlabs.com' }
   s.ios.deployment_target     = '8.0'
