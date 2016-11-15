@@ -8,7 +8,7 @@ use_frameworks!
 abstract_target 'CobraBase' do
 
    # framework dependencies
-   pod 'Swinject', '1.1.5'
+   pod 'Swinject', '~> 1.1'
    
    target 'Cobra' do
    end
