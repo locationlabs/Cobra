@@ -9,7 +9,7 @@ class BarAssembly: Constructible {
 // MARK: - AssemblyType
 extension BarAssembly: AssemblyType {
 
-    func assemble(container: Container) {
+    func assemble(_ container: Container) {
         
         // feature
         container.register(BarFeatureType.self) { _ in
@@ -17,7 +17,7 @@ extension BarAssembly: AssemblyType {
         }
     }
 
-    func loaded(resolver: ResolverType) {
+    func loaded(_ resolver: ResolverType) {
 
     }
 }

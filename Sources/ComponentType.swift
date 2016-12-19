@@ -14,5 +14,5 @@ public protocol ComponentType {
      
      - returns: the assembly type that should be loaded for the component based on the provided flavor
      */
-    func assemblyForFlavor(flavor: Flavor?) -> AssemblyType
+    func assemblyForFlavor(_ flavor: Flavor?) -> AssemblyType
 }

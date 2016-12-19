@@ -41,6 +41,8 @@
 		903EDFA11CC6BDCD00AF813C /* PlistProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDF9F1CC6BDBF00AF813C /* PlistProperty.swift */; };
 		903EDFA31CC6C0D900AF813C /* ProxySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDFA21CC6C0D900AF813C /* ProxySpec.swift */; };
 		903EDFA51CC6C2C100AF813C /* FlavorComponentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDFA41CC6C2C100AF813C /* FlavorComponentSpec.swift */; };
+		9EEA024EBFC724CE1B58DB0E /* Pods_CobraBase_Cobra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA8F71114505C20B39DF7A5 /* Pods_CobraBase_Cobra.framework */; };
+		C2F1AB79D9F3D66B40F2E235 /* Pods_CobraBase_CobraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102021ECE67E1F4ACAB98506 /* Pods_CobraBase_CobraTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		102021ECE67E1F4ACAB98506 /* Pods_CobraBase_CobraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobraBase_CobraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17ACED59182D1DD66CBAAC48 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D39219072C51C4BCCB8B01A /* Pods-CobraBase-CobraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobraBase-CobraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CobraBase-CobraTests/Pods-CobraBase-CobraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C99DE9723FF8F91AC4F005A /* Pods-CobraBase-CobraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobraBase-CobraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CobraBase-CobraTests/Pods-CobraBase-CobraTests.release.xcconfig"; sourceTree = "<group>"; };
+		858ED4942B24656D9BD8424B /* Pods-CobraBase-Cobra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobraBase-Cobra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CobraBase-Cobra/Pods-CobraBase-Cobra.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9F78E61DB318ED0064C10C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		8F9F78E71DB318ED0064C10C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		8F9F78E81DB318ED0064C10C /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
@@ -96,6 +102,8 @@
 		903EDF9F1CC6BDBF00AF813C /* PlistProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistProperty.swift; sourceTree = "<group>"; };
 		903EDFA21CC6C0D900AF813C /* ProxySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySpec.swift; sourceTree = "<group>"; };
 		903EDFA41CC6C2C100AF813C /* FlavorComponentSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorComponentSpec.swift; sourceTree = "<group>"; };
+		BDA8F71114505C20B39DF7A5 /* Pods_CobraBase_Cobra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CobraBase_Cobra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF20438D9C38ABE7D81365C /* Pods-CobraBase-Cobra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CobraBase-Cobra.release.xcconfig"; path = "Pods/Target Support Files/Pods-CobraBase-Cobra/Pods-CobraBase-Cobra.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEA024EBFC724CE1B58DB0E /* Pods_CobraBase_Cobra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F1AB79D9F3D66B40F2E235 /* Pods_CobraBase_CobraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +133,8 @@
 				8F9F78E71DB318ED0064C10C /* Quick.framework */,
 				8F9F78E81DB318ED0064C10C /* Swinject.framework */,
 				17ACED59182D1DD66CBAAC48 /* Pods.framework */,
+				BDA8F71114505C20B39DF7A5 /* Pods_CobraBase_Cobra.framework */,
+				102021ECE67E1F4ACAB98506 /* Pods_CobraBase_CobraTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 				903EDE461CC034FF00AF813C /* Tests */,
 				903EDE391CC034FF00AF813C /* Products */,
 				2697181FF965DC0A772CE068 /* Frameworks */,
+				AF76F133C75260EF69F334DD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +265,17 @@
 			path = Bar2;
 			sourceTree = "<group>";
 		};
+		AF76F133C75260EF69F334DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				858ED4942B24656D9BD8424B /* Pods-CobraBase-Cobra.debug.xcconfig */,
+				CAF20438D9C38ABE7D81365C /* Pods-CobraBase-Cobra.release.xcconfig */,
+				2D39219072C51C4BCCB8B01A /* Pods-CobraBase-CobraTests.debug.xcconfig */,
+				6C99DE9723FF8F91AC4F005A /* Pods-CobraBase-CobraTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -270,10 +294,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 903EDE4C1CC034FF00AF813C /* Build configuration list for PBXNativeTarget "Cobra" */;
 			buildPhases = (
+				6FC8C4AC481A884478F7AC0F /* [CP] Check Pods Manifest.lock */,
 				903EDE331CC034FF00AF813C /* Sources */,
 				903EDE341CC034FF00AF813C /* Frameworks */,
 				903EDE351CC034FF00AF813C /* Headers */,
 				903EDE361CC034FF00AF813C /* Resources */,
+				8E555913F06133701FC2C784 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,9 +314,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 903EDE4F1CC034FF00AF813C /* Build configuration list for PBXNativeTarget "CobraTests" */;
 			buildPhases = (
+				D659D4B993FBA025AFFFECC8 /* [CP] Check Pods Manifest.lock */,
 				903EDE3E1CC034FF00AF813C /* Sources */,
 				903EDE3F1CC034FF00AF813C /* Frameworks */,
 				903EDE401CC034FF00AF813C /* Resources */,
+				4B85320740FBE4AAC934B564 /* [CP] Embed Pods Frameworks */,
+				D1106DAB7AD0B0B35A6BEA28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,9 +343,11 @@
 				TargetAttributes = {
 					903EDE371CC034FF00AF813C = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 					};
 					903EDE411CC034FF00AF813C = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -358,6 +389,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B85320740FBE4AAC934B564 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CobraBase-CobraTests/Pods-CobraBase-CobraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC8C4AC481A884478F7AC0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E555913F06133701FC2C784 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CobraBase-Cobra/Pods-CobraBase-Cobra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1106DAB7AD0B0B35A6BEA28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CobraBase-CobraTests/Pods-CobraBase-CobraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D659D4B993FBA025AFFFECC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		903EDE331CC034FF00AF813C /* Sources */ = {
@@ -507,6 +616,7 @@
 		};
 		903EDE4D1CC034FF00AF813C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858ED4942B24656D9BD8424B /* Pods-CobraBase-Cobra.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -524,11 +634,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		903EDE4E1CC034FF00AF813C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF20438D9C38ABE7D81365C /* Pods-CobraBase-Cobra.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -545,11 +657,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.locationlabs.Cobra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		903EDE501CC034FF00AF813C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D39219072C51C4BCCB8B01A /* Pods-CobraBase-CobraTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,11 +673,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.locationlabs.CobraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		903EDE511CC034FF00AF813C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C99DE9723FF8F91AC4F005A /* Pods-CobraBase-CobraTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +689,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.locationlabs.CobraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

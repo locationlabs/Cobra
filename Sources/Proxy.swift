@@ -9,7 +9,7 @@
 final public class Proxy<T>: ProxyType {
     
     /// the list of modules that a proxy can proxy to
-    private let modules: [ModuleType]
+    fileprivate let modules: [ModuleType]
     
     /// unique key for the proxy feature
     public let key: String
@@ -33,12 +33,12 @@ final public class Proxy<T>: ProxyType {
      
      - returns: the module that is configured behind tweaks for the feature proxy
      */
-    public func lookupModule(key: String? = nil) throws -> ModuleType {
+    public func lookupModule(_ key: String? = nil) throws -> ModuleType {
         guard let lookupKey = key else {
             return modules.first!
         }
         guard let module = modules.filter({ $0.key == lookupKey }).first else {
-            throw Error.MissingModule
+            throw Error.missingModule
         }
         return module
     }
@@ -63,6 +63,6 @@ final public class Proxy<T>: ProxyType {
  
  - returns: the proxy key
  */
-func toProxyKey<T>(type: T.Type) -> String {
+func toProxyKey<T>(_ type: T.Type) -> String {
     return "\(T.self)"
 }

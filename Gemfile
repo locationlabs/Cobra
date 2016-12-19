@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem 'activesupport', '~> 4.0'
-gem 'cocoapods', '~> 1.0.0'
+gem 'cocoapods', '~> 1.1.1'
 

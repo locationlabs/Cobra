@@ -9,7 +9,7 @@ class FooAssembly: Constructible {
 // MARK: - AssemblyType
 extension FooAssembly: AssemblyType {
 
-    func assemble(container: Container) {
+    func assemble(_ container: Container) {
         
         // feature
         container.register(FooFeatureType.self) { _ in
@@ -17,7 +17,7 @@ extension FooAssembly: AssemblyType {
         }
     }
 
-    func loaded(resolver: ResolverType) {
+    func loaded(_ resolver: ResolverType) {
 
     }
 }

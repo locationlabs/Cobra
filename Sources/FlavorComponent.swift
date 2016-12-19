@@ -11,11 +11,11 @@ import Swinject
  FlavorComponent<ServiceAssembly, MockServiceAssembly>(flavor: .Mock)
  ```
  */
-final public class FlavorComponent<Assembly, FlavorAssembly where Assembly: Constructible, Assembly: AssemblyType,
-FlavorAssembly: Constructible, FlavorAssembly: AssemblyType> {
+final public class FlavorComponent<Assembly, FlavorAssembly> where Assembly: Constructible, Assembly: AssemblyType,
+FlavorAssembly: Constructible, FlavorAssembly: AssemblyType {
     
     /// the flavor for this component that will use to swap on
-    private let flavor: Flavor
+    fileprivate let flavor: Flavor
     
     /**
      Will create a FlavorComponent that will use the flavor assembly if the the flavor is requested otherwise
@@ -30,9 +30,9 @@ FlavorAssembly: Constructible, FlavorAssembly: AssemblyType> {
 
 // MARK: - ComponentType
 extension FlavorComponent: ComponentType {
-    public func assemblyForFlavor(flavor: Flavor?) -> AssemblyType {
-        if let f = flavor where self.flavor == f {
-            return FlavorAssembly()
+    public func assemblyForFlavor(_ flavor: Flavor?) -> AssemblyType {
+        if let f = flavor, self.flavor == f {
+            return FlavorAssembly() as! AssemblyType
         }
         return Assembly()
     }
