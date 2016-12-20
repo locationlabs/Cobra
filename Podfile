@@ -17,8 +17,8 @@ abstract_target 'CobraBase' do
 
    # test specific dependencies
    target 'CobraTests' do
-      pod 'Quick', '~> 1.0.0'
-      pod 'Nimble', '~> 5.1.1'
+      pod 'Quick', '1.0.0'
+      pod 'Nimble', '5.1.1'
    end
 end
 
