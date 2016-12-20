@@ -6,7 +6,7 @@ env:
   global:
     - WORKSPACE=Cobra.xcworkspace
     - SDK=iphonesimulator
-    - DESTINATION="OS=10.1,name=iPhone 6S"
+    - DESTINATION="OS=10.0,name=iPhone 6S"
     - SCHEME="Cobra"
 script:
   - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
