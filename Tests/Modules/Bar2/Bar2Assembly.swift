@@ -7,7 +7,7 @@ class Bar2Assembly: Constructible {
 }
 
 // MARK: - AssemblyType
-extension Bar2Assembly: Cobra.Assembly {
+extension Bar2Assembly: AssemblyType {
     
     func assemble(_ container: Container) {
         
