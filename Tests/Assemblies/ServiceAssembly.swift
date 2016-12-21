@@ -12,7 +12,7 @@ class ServiceAssembly: Constructible {
 // MARK: - AssemblyType
 extension ServiceAssembly: AssemblyType {
 
-    func assemble(_ container: Container) {
+    func assemble(container: Container) {
         container.register(FooServiceType.self) { resolver in
             return FooService(appProp: resolver.property("app.prop")!,
                               envProp: resolver.property("env.prop")!)

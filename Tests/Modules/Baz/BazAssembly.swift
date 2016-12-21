@@ -9,7 +9,7 @@ class BazAssembly: Constructible {
 // MARK: - AssemblyType
 extension BazAssembly: AssemblyType {
 
-    func assemble(_ container: Container) {
+    func assemble(container: Container) {
         
         // feature
         container.register(BazFeatureType.self) { _ in
@@ -17,7 +17,7 @@ extension BazAssembly: AssemblyType {
         }
     }
 
-    func loaded(_ resolver: ResolverType) {
+    func loaded(resolver: ResolverType) {
 
     }
 }

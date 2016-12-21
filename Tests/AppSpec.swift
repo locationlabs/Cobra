@@ -53,7 +53,7 @@ class AppSpec: QuickSpec {
                         Component<ServiceAssembly>()
                     ],
                     properties: [
-                        JsonProperty(bundle: NSBundle(forClass: AppSpec.self))
+                        JsonProperty(bundle: Bundle(for: AppSpec.self))
                     ])
                 
                 beforeEach {
@@ -75,8 +75,8 @@ class AppSpec: QuickSpec {
                             Component<ServiceAssembly>()
                         ],
                         properties: [
-                            JsonProperty(bundle: NSBundle(forClass: AppSpec.self)),
-                            JsonProperty(bundle: NSBundle(forClass: AppSpec.self), name: "properties2")
+                            JsonProperty(bundle: Bundle(for: AppSpec.self)),
+                            JsonProperty(bundle: Bundle(for: AppSpec.self), name: "properties2")
                         ])
                     
                     beforeEach {
@@ -99,9 +99,9 @@ class AppSpec: QuickSpec {
                             Component<ServiceAssembly>()
                         ],
                         properties: [
-                            JsonProperty(bundle: NSBundle(forClass: AppSpec.self)),
-                            JsonProperty(bundle: NSBundle(forClass: AppSpec.self), name: "dev", flavor: .Dev),
-                            JsonProperty(bundle: NSBundle(forClass: AppSpec.self), name: "prod", flavor: .Prod)
+                            JsonProperty(bundle: Bundle(for: AppSpec.self)),
+                            JsonProperty(bundle: Bundle(for: AppSpec.self), name: "dev", flavor: .Dev),
+                            JsonProperty(bundle: Bundle(for: AppSpec.self), name: "prod", flavor: .Prod)
                         ]
                     )
                     
