@@ -1,6 +1,6 @@
 import Foundation
 import Swinject
-
+import SwinjectPropertyLoader
 
 /**
  The JsonProperty represents a Json property file that will be loaded into the application based on
@@ -18,7 +18,7 @@ final public class JsonProperty: PropertyType {
      - parameter name:   the name of the resource in the bundle
      - parameter type:   the type of the property resource
      */
-    public init(bundle: NSBundle = NSBundle.mainBundle(), name: String = "properties", flavor: Flavor? = nil) {
+    public init(bundle: Bundle = Bundle.main, name: String = "properties", flavor: Flavor? = nil) {
         self.propertyLoader = JsonPropertyLoader(bundle: bundle, name: name)
         self.flavor = flavor
     }

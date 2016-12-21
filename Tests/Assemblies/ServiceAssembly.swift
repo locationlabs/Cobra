@@ -19,7 +19,7 @@ extension ServiceAssembly: AssemblyType {
         }
     }
 
-    func loaded(resolver: ResolverType) {
+    func loaded(_ resolver: ResolverType) {
 
     }
 }

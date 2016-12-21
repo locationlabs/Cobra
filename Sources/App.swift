@@ -13,10 +13,10 @@ import Swinject
 final public class App {
     
     /// the proxy key to proxy mapping for feature routing
-    private var proxies = [String:ProxyType]()
+    fileprivate var proxies = [String:ProxyType]()
 
     /// track modules that were loaded so we don't reload them each time we route
-    private var loadedModules = Set<String>()
+    fileprivate var loadedModules = Set<String>()
     
     /// the assembly that contains all of the DI components, internal for testing purposes
     var assembler: Assembler!
@@ -29,7 +29,7 @@ final public class App {
      
      - throws: Swinject.PropertyLoaderError
      */
-    public func config(config: Config, flavor: Flavor? = nil) throws {
+    public func config(_ config: Config, flavor: Flavor? = nil) throws {
         assembler = try config.buildAssembler(flavor)
     }
     
@@ -39,7 +39,7 @@ final public class App {
      
      - parameter proxies: the proxies for the application
      */
-    public func registerProxies(proxies: [ProxyType]) {
+    public func registerProxies(_ proxies: [ProxyType]) {
         for proxy in proxies {
             self.proxies[proxy.key] = proxy
         }
@@ -55,13 +55,13 @@ final public class App {
      
      - returns: the feature type instance for routing
      */
-    public func feature<T>(type: T.Type, moduleKey: String? = nil) throws -> T {
+    public func feature<T>(_ type: T.Type, moduleKey: String? = nil) throws -> T {
         // convert feature to proxy key and lookup proxy
         let key = toProxyKey(T.self)
         logDebug("Will lookup proxy for key=\(key)")
         
         guard let proxy = proxies[key] else {
-            throw Error.MissingProxy
+            throw Error.missingProxy
         }
 
         // lookup the module for the given proxy which is configured by tweaks
@@ -70,7 +70,7 @@ final public class App {
 
         if !loadedModules.contains(module.key) {
             // lazy load the assembly
-            assembler.applyAssembly(module.assembly)
+            assembler.apply(assembly: module.assembly)
             logDebug("Lazy loaded assembly=\(module.assembly) for key=\(module.key)")
             
             // insert module to loaded so we only lazy load once
@@ -87,7 +87,7 @@ final public class App {
         
         // lookup the feature from the resolver
         guard let feature = assembler.resolver.resolve(T.self) else {
-            throw Error.MissingFeature
+            throw Error.missingFeature
         }
         return feature
     }

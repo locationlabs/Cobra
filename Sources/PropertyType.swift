@@ -1,5 +1,6 @@
 import Foundation
 import Swinject
+import SwinjectPropertyLoader
 
 
 /**

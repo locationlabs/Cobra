@@ -7,10 +7,10 @@ import Swinject
 final public class Config {
     
     /// list of components to load into the container
-    private let components: [ComponentType]
+    fileprivate let components: [ComponentType]
     
     /// list of properties from frameworks (e.g. properties.json)
-    private let properties: [PropertyType]
+    fileprivate let properties: [PropertyType]
 
     /**
      Will create a configuration object that can be used to bootstrap a VIPER application
@@ -33,7 +33,7 @@ final public class Config {
      
      - returns: the built assembler
      */
-    func buildAssembler(flavor: Flavor? = nil) throws -> Assembler {
+    func buildAssembler(_ flavor: Flavor? = nil) throws -> Assembler {
         
         // load the properties first
         let assembler = Assembler()
@@ -45,7 +45,7 @@ final public class Config {
         
         // load assemblies from components
         let assemblies = components.map { $0.assemblyForFlavor(flavor) }
-        assembler.applyAssemblies(assemblies)
+        assembler.apply(assemblies: assemblies)
         logDebug("Applied assemblies=\(assemblies), for flavor=\(flavor)")
         return assembler
     }

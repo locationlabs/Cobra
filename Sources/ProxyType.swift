@@ -18,7 +18,7 @@ public protocol ProxyType: class {
      
      - returns: the module that is currently configured behind the proxy
      */
-    func lookupModule(key: String?) throws -> ModuleType
+    func lookupModule(_ key: String?) throws -> ModuleType
     
     /**
      Will retrieve the keys that should be unloaded for the proxy. This is used when we need to switch
