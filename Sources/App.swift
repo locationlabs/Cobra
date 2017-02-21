@@ -19,7 +19,7 @@ final public class App {
     fileprivate var loadedModules = Set<String>()
     
     /// the assembly that contains all of the DI components, internal for testing purposes
-    var assembler: Assembler!
+    public var assembler: Assembler!
     
     /**
      Will configure the application with assemblies and properties. If the application is configured for push

@@ -33,7 +33,7 @@ final public class Config {
      
      - returns: the built assembler
      */
-    func buildAssembler(_ flavor: Flavor? = nil) throws -> Assembler {
+    public func buildAssembler(_ flavor: Flavor? = nil) throws -> Assembler {
         
         // load the properties first
         let assembler = Assembler()
