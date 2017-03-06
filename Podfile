@@ -8,8 +8,8 @@ use_frameworks!
 abstract_target 'CobraBase' do
 
    # framework dependencies
-   pod 'Swinject', '~> 2.0.0-beta.2'
-   pod 'SwinjectPropertyLoader', '1.0.0-beta.2'
+   pod 'Swinject', '2.0.0'
+   pod 'SwinjectPropertyLoader', '1.0.0'
 
    
    target 'Cobra' do

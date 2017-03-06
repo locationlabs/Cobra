@@ -1,4 +1,5 @@
 import Swinject
+import SwinjectPropertyLoader
 import Cobra
 
 
@@ -10,7 +11,7 @@ class ServiceAssembly: Constructible {
 }
 
 // MARK: - AssemblyType
-extension ServiceAssembly: AssemblyType {
+extension ServiceAssembly: Assembly {
 
     func assemble(container: Container) {
         container.register(FooServiceType.self) { resolver in
@@ -19,7 +20,7 @@ extension ServiceAssembly: AssemblyType {
         }
     }
 
-    func loaded(_ resolver: ResolverType) {
+    func loaded(_ resolver: Resolver) {
 
     }
 }

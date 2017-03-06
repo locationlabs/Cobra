@@ -11,8 +11,8 @@ import Swinject
  FlavorComponent<ServiceAssembly, MockServiceAssembly>(flavor: .Mock)
  ```
  */
-final public class FlavorComponent<Assembly, FlavorAssembly> where Assembly: Constructible, Assembly: AssemblyType,
-FlavorAssembly: Constructible, FlavorAssembly: AssemblyType {
+final public class FlavorComponent<A, FlavorAssembly> where A: Constructible, A: Assembly,
+FlavorAssembly: Constructible, FlavorAssembly: Assembly {
     
     /// the flavor for this component that will use to swap on
     fileprivate let flavor: Flavor
@@ -30,10 +30,10 @@ FlavorAssembly: Constructible, FlavorAssembly: AssemblyType {
 
 // MARK: - ComponentType
 extension FlavorComponent: ComponentType {
-    public func assemblyForFlavor(_ flavor: Flavor?) -> AssemblyType {
+    public func assemblyForFlavor(_ flavor: Flavor?) -> Assembly {
         if let f = flavor, self.flavor == f {
-            return FlavorAssembly() as! AssemblyType
+            return FlavorAssembly() as Assembly
         }
-        return Assembly()
+        return A()
     }
 }

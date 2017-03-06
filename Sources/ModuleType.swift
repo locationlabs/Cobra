@@ -7,7 +7,7 @@ import Swinject
 public protocol ModuleType {
     
     /// the assembly that is backing this module
-    var assembly: AssemblyType { get }
+    var assembly: Assembly { get }
     
     /// the key for this module that is based on the assembly type itself so we can lookup the module loaded for a proxy
     var key: String { get }
