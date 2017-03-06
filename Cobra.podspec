@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name                      = 'Cobra'
   s.module_name               = 'Cobra'
-  s.version                   = '2.2.0'
+  s.version                   = '3.0.0'
   s.summary                   = 'Application routing framework written in Swift'
   s.description               = <<-DESC
 Cobra is a lightweight application routing framework written in Swift that provides modular abstractions to your code base that is built on top of Swinject, a lightweight dependency injection framework.
