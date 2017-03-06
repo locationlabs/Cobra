@@ -7,7 +7,7 @@ class BazAssembly: Constructible {
 }
 
 // MARK: - AssemblyType
-extension BazAssembly: AssemblyType {
+extension BazAssembly: Assembly {
 
     func assemble(container: Container) {
         
@@ -17,7 +17,7 @@ extension BazAssembly: AssemblyType {
         }
     }
 
-    func loaded(resolver: ResolverType) {
+    func loaded(resolver: Resolver) {
 
     }
 }

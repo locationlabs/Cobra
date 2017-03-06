@@ -10,7 +10,7 @@ import SwinjectPropertyLoader
 public protocol PropertyType {
     
     /// the Swinject property loader that will be used to load properties from disk
-    var propertyLoader: PropertyLoaderType { get }
+    var propertyLoader: PropertyLoader { get }
     
     /// the flavor in which the properties should be loaded for. If nil, then the properties will always be loaded
     var flavor: Flavor? { get }

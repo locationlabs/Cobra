@@ -8,7 +8,7 @@ import SwinjectPropertyLoader
  */
 final public class JsonProperty: PropertyType {
     
-    public let propertyLoader: PropertyLoaderType
+    public let propertyLoader: PropertyLoader
     public let flavor: Flavor?
     
     /**

@@ -7,7 +7,7 @@ class FooAssembly: Constructible {
 }
 
 // MARK: - AssemblyType
-extension FooAssembly: AssemblyType {
+extension FooAssembly: Assembly {
 
     func assemble(container: Container) {
         
@@ -17,7 +17,7 @@ extension FooAssembly: AssemblyType {
         }
     }
 
-    func loaded(resolver: ResolverType) {
+    func loaded(resolver: Resolver) {
 
     }
 }
