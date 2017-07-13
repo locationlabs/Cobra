@@ -1,7 +1,14 @@
 # reference: http://www.objc.io/issue-6/travis-ci.html
 
 language: objective-c
+rvm:
+  - 2.2.1
 osx_image: xcode8
+install:
+  - gem install bundler
+  - bundle install
+  - bundle exec pod repo update
+  - bundle exec pod install
 env:
   global:
     - WORKSPACE=Cobra.xcworkspace
