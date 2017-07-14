@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		489FEE691E6E1DDB009ADAAD /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F78E61DB318ED0064C10C /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		489FEE6A1E6E1DDB009ADAAD /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F78E71DB318ED0064C10C /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		489FEE6B1E6E1DDB009ADAAD /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F78E81DB318ED0064C10C /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		489FEE6C1E6E1DDB009ADAAD /* SwinjectPropertyLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 489FEE671E6E1C60009ADAAD /* SwinjectPropertyLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		489FEE6D1E6E1DDF009ADAAD /* Cobra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903EDE381CC034FF00AF813C /* Cobra.framework */; };
 		903EDE3C1CC034FF00AF813C /* Cobra.h in Headers */ = {isa = PBXBuildFile; fileRef = 903EDE3B1CC034FF00AF813C /* Cobra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		903EDE6E1CC03AB000AF813C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903EDE641CC03AB000AF813C /* App.swift */; };
@@ -57,23 +53,6 @@
 			remoteInfo = Cobra;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		489FEE681E6E1DCF009ADAAD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				489FEE691E6E1DDB009ADAAD /* Nimble.framework in Embed Frameworks */,
-				489FEE6A1E6E1DDB009ADAAD /* Quick.framework in Embed Frameworks */,
-				489FEE6B1E6E1DDB009ADAAD /* Swinject.framework in Embed Frameworks */,
-				489FEE6C1E6E1DDB009ADAAD /* SwinjectPropertyLoader.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		489FEE671E6E1C60009ADAAD /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectPropertyLoader.framework; path = Carthage/Build/iOS/SwinjectPropertyLoader.framework; sourceTree = "<group>"; };
@@ -314,7 +293,6 @@
 				903EDE3E1CC034FF00AF813C /* Sources */,
 				903EDE3F1CC034FF00AF813C /* Frameworks */,
 				903EDE401CC034FF00AF813C /* Resources */,
-				489FEE681E6E1DCF009ADAAD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -482,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -527,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -591,7 +569,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Carthage/Build/iOS\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Carthage/Build/iOS\"",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.locationlabs.CobraTests;
@@ -604,7 +585,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/Carthage/Build/iOS\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Carthage/Build/iOS\"",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.locationlabs.CobraTests;
