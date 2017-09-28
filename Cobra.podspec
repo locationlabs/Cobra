@@ -14,7 +14,7 @@ Cobra is a lightweight application routing framework written in Swift that provi
   s.source                    = { :git => 'https://github.com/locationlabs/Cobra.git', :tag => s.version }
   s.source_files              = 'Sources/**/*.{h,swift}'
 
-  s.dependency 'Swinject', '~> 2.1'
+  s.dependency 'Swinject', '~> 2'
   s.dependency 'SwinjectPropertyLoader', '~> 1'
   s.subspec 'DataTypes' do |ss|
     ss.source_files           = 'Sources/Constructible.swift'
