@@ -15,9 +15,9 @@ Cobra works best when used with [Gorgon][2], an application event distribution f
 See [Boa][5], a sample app written in Swift, for details.
 
 ## Requirements
-- iOS 8+
-- Swift 3
-- Xcode 8.0+
+- iOS 9+
+- Swift 4
+- Xcode 9
 
 
 ## Installation
@@ -28,10 +28,10 @@ Cobra is available through [CocoaPods](https://cocoapods.org) or [Carthage](http
 To install Cobra with CocoaPods, add the following lines to your `Podfile`.
 
     source 'https://github.com/CocoaPods/Specs.git'
-    platform :ios, '8.0'
+    platform :ios, '9.0'
     use_frameworks!
 
-    pod 'Cobra', '~> 3.0'
+    pod 'Cobra', '~> 5'
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
 
@@ -40,7 +40,7 @@ Then run `pod install` command. For details of the installation and usage of Coc
 To install Cobra with Carthage, add the following line to your `Cartfile`.
 
 ```
-github "locationlabs/Cobra" ~> 3.0
+github "locationlabs/Cobra" ~> 5.0
 ```
 
 Then run `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
