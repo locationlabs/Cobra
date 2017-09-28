@@ -40,13 +40,13 @@ final public class Config {
 
         for property in properties.filter({ $0.flavor == nil || $0.flavor == flavor }) {
             try assembler.applyPropertyLoader(property.propertyLoader)
-            logDebug("Loaded properties=\(property), for flavor=\(flavor)")
+            logDebug("Loaded properties=\(property), for flavor=\(String(describing: flavor))")
         }
         
         // load assemblies from components
         let assemblies = components.map { $0.assemblyForFlavor(flavor) }
         assembler.apply(assemblies: assemblies)
-        logDebug("Applied assemblies=\(assemblies), for flavor=\(flavor)")
+        logDebug("Applied assemblies=\(assemblies), for flavor=\(String(describing: flavor))")
         return assembler
     }
 }

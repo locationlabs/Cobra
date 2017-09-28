@@ -26,6 +26,6 @@ final public class JsonProperty: PropertyType {
 
 extension JsonProperty: CustomStringConvertible {
     public var description: String {
-        return "{propertyLoader=\(propertyLoader), flavor=\(flavor)}"
+        return "{propertyLoader=\(propertyLoader), flavor=\(String(describing: flavor))}"
     }
 }

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name                      = 'Cobra'
   s.module_name               = 'Cobra'
-  s.version                   = '4.0.0'
+  s.version                   = '5.0.0'
   s.summary                   = 'Application routing framework written in Swift'
   s.description               = <<-DESC
 Cobra is a lightweight application routing framework written in Swift that provides modular abstractions to your code base that is built on top of Swinject, a lightweight dependency injection framework.
@@ -14,7 +14,7 @@ Cobra is a lightweight application routing framework written in Swift that provi
   s.source                    = { :git => 'https://github.com/locationlabs/Cobra.git', :tag => s.version }
   s.source_files              = 'Sources/**/*.{h,swift}'
 
-  s.dependency 'Swinject', '~> 2'
+  s.dependency 'Swinject', '~> 2.1'
   s.dependency 'SwinjectPropertyLoader', '~> 1'
   s.subspec 'DataTypes' do |ss|
     ss.source_files           = 'Sources/Constructible.swift'

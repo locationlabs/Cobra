@@ -27,6 +27,6 @@ final public class PlistProperty: PropertyType {
 
 extension PlistProperty: CustomStringConvertible {
     public var description: String {
-        return "{propertyLoader=\(propertyLoader), flavor=\(flavor)}"
+        return "{propertyLoader=\(propertyLoader), flavor=\(String(describing: flavor))}"
     }
 }

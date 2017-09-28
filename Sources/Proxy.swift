@@ -63,6 +63,6 @@ final public class Proxy<T>: ProxyType {
  
  - returns: the proxy key
  */
-func toProxyKey<T>(_ type: T.Type) -> String {
+public func toProxyKey<T>(_ type: T.Type) -> String {
     return "\(T.self)"
 }
